@@ -10,49 +10,61 @@ import XCTest
 @testable import DoggitosApp
 
 class DoggitosAppTests: XCTestCase {
-   
+    
+    var breedViewModel : BreedViewModel? = BreedViewModel()
+    
+    var imagesBreedViewModel : ImagesBreedViewModel? = ImagesBreedViewModel()
+    
+    override func setUp() {
+        super.setUp()
+        
+        breedViewModel?.breed = Breed(status: "success", message: ["dog1","dog2"])
+        
+        imagesBreedViewModel?.dogs = Dogs(status: "success", message: ["https://dog.ceo/api/img/kelpie/n02105412_1031.jpg","https://dog.ceo/api/img/kelpie/n02105412_1106.jpg"])
+        
+    }
+    
+    override func tearDown() {
+        
+        self.breedViewModel = nil
+        self.imagesBreedViewModel = nil
+        
+        super.tearDown()
+    }
+    
     func testCountBreed(){
-        let breedViewModel = BreedViewModel()
-        breedViewModel.breed = Breed(status: "success", message: ["dog1","dog2"])
-
-        XCTAssertEqual(breedViewModel.getCountBreeds(), 2)
+        XCTAssertEqual(breedViewModel?.getCountBreeds(), 2)
     }
     
     func testCountUrlDogs(){
-        let imagesBreedViewModel = ImagesBreedViewModel()
-        imagesBreedViewModel.dogs = Dogs(status: "success", message: ["https://dog.ceo/api/img/kelpie/n02105412_1031.jpg","https://dog.ceo/api/img/kelpie/n02105412_1106.jpg"])
-        
-        XCTAssertEqual(imagesBreedViewModel.getCountImages(), 2)
+        XCTAssertEqual(imagesBreedViewModel?.getCountImages(), 2)
     }
     
     func testResultFetchBreed(){
-        let breedViewModel = BreedViewModel()
-        
         let expect = expectation(description: "Fetch Data Breed!")
         
-        breedViewModel.fetchBreedList {
-            XCTAssertNotNil(breedViewModel.breed?.message)
+        breedViewModel?.fetchBreedList {
+            XCTAssertNotNil(self.breedViewModel?.breed?.message)
             expect.fulfill()
         }
         
         waitForExpectations(timeout: 10) { (error) in
-            XCTAssertNil(error, "Test time out. \(error?.localizedDescription)")
+            XCTAssertNil(error, "Test time out. \(String(describing: error?.localizedDescription))")
         }
     }
     
     func testResultFetchDogs(){
-        let imagesBreedViewModel = ImagesBreedViewModel()
-        imagesBreedViewModel.breedName = "african"
-        
         let expect = expectation(description: "Fetch Data Dogs!")
         
-        imagesBreedViewModel.fetchUrlImagesList {
-            XCTAssertNotNil(imagesBreedViewModel.dogs?.message)
+        imagesBreedViewModel?.breedName = "african"
+        
+        imagesBreedViewModel?.fetchUrlImagesList {
+            XCTAssertNotNil(self.imagesBreedViewModel?.dogs?.message)
             expect.fulfill()
         }
         
         waitForExpectations(timeout: 10) { (error) in
-            XCTAssertNil(error, "Test time out. \(error?.localizedDescription)")
+            XCTAssertNil(error, "Test time out. \(String(describing: error?.localizedDescription))")
         }
     }
     
