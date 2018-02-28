@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManyPuppiesVC" customModule="DoggitosApp" customModuleProvider="target">
+            <connections>
+                <outlet property="breedNameLabel" destination="7Jk-5j-mzg" id="Qlb-CI-iyY"/>
+                <outlet property="collectionView" destination="QIM-1t-RKp" id="hhO-Bo-1IE"/>
+                <outlet property="containerViewPicture" destination="Q88-f8-6oC" id="hk8-De-fUc"/>
+                <outlet property="imageView" destination="s40-ve-rPa" id="gVh-wM-5rT"/>
+                <outlet property="imageViewBackgroundHeader" destination="Itf-gc-sJd" id="HEp-MY-ohY"/>
+                <outlet property="view" destination="ur9-qZ-Ins" id="mwW-k4-Xc6"/>
+                <outlet property="viewHeader" destination="fC0-1X-sDY" id="6C6-Yt-xnY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ur9-qZ-Ins">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-1X-sDY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perro" translatesAutoresizingMaskIntoConstraints="NO" id="Itf-gc-sJd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.99192041158676147" green="0.015185859985649586" blue="0.047917105257511139" alpha="0.1309396404109589" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7z-y8-R1U">
+                            <rect key="frame" x="15" y="30" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Ddy-My-L30"/>
+                                <constraint firstAttribute="height" constant="20" id="GcO-KS-Gns"/>
+                            </constraints>
+                            <state key="normal" title="back" image="iconArrowBack"/>
+                            <connections>
+                                <action selector="backButton:" destination="-1" eventType="touchUpInside" id="Qpg-el-XsF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doggitos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M18-eN-qpB">
+                            <rect key="frame" x="156.5" y="30" width="62" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="BUF-Ju-W39"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q88-f8-6oC">
+                            <rect key="frame" x="137.5" y="66" width="100" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perro" translatesAutoresizingMaskIntoConstraints="NO" id="s40-ve-rPa">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="s40-ve-rPa" firstAttribute="top" secondItem="Q88-f8-6oC" secondAttribute="top" id="5ty-Oh-sit"/>
+                                <constraint firstAttribute="trailing" secondItem="s40-ve-rPa" secondAttribute="trailing" id="9BN-cd-Mpz"/>
+                                <constraint firstAttribute="height" constant="100" id="NCc-6q-jLs"/>
+                                <constraint firstAttribute="width" constant="100" id="Uec-Hi-wqT"/>
+                                <constraint firstAttribute="bottom" secondItem="s40-ve-rPa" secondAttribute="bottom" id="qsS-6L-bnx"/>
+                                <constraint firstItem="s40-ve-rPa" firstAttribute="leading" secondItem="Q88-f8-6oC" secondAttribute="leading" id="yhp-FE-rIu"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El perrito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="7Jk-5j-mzg">
+                            <rect key="frame" x="20" y="176" width="335" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ygT-ES-ogf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99192041158676147" green="0.015185859985649586" blue="0.047917105257511139" alpha="0.81782427226027399" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7Jk-5j-mzg" firstAttribute="top" secondItem="Q88-f8-6oC" secondAttribute="bottom" constant="10" id="7wj-SN-Yqq"/>
+                        <constraint firstItem="Q88-f8-6oC" firstAttribute="top" secondItem="M18-eN-qpB" secondAttribute="bottom" constant="15" id="KNX-E0-LP7"/>
+                        <constraint firstAttribute="height" constant="210" id="Va2-Ko-aGO"/>
+                        <constraint firstItem="f7z-y8-R1U" firstAttribute="top" secondItem="fC0-1X-sDY" secondAttribute="top" constant="30" id="aIY-hJ-YZi"/>
+                        <constraint firstItem="f7z-y8-R1U" firstAttribute="leading" secondItem="fC0-1X-sDY" secondAttribute="leading" constant="15" id="bY7-YK-0WS"/>
+                        <constraint firstAttribute="trailing" secondItem="7Jk-5j-mzg" secondAttribute="trailing" constant="20" id="gwE-Fj-SFE"/>
+                        <constraint firstItem="M18-eN-qpB" firstAttribute="top" secondItem="fC0-1X-sDY" secondAttribute="top" constant="30" id="oB6-pe-eaL"/>
+                        <constraint firstItem="M18-eN-qpB" firstAttribute="centerX" secondItem="fC0-1X-sDY" secondAttribute="centerX" id="qte-We-7fg"/>
+                        <constraint firstItem="7Jk-5j-mzg" firstAttribute="leading" secondItem="fC0-1X-sDY" secondAttribute="leading" constant="20" id="sOg-Gw-fIe"/>
+                        <constraint firstItem="Q88-f8-6oC" firstAttribute="centerX" secondItem="fC0-1X-sDY" secondAttribute="centerX" id="vxn-v5-bhJ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QIM-1t-RKp">
+                    <rect key="frame" x="0.0" y="210" width="375" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="ZAc-Ve-eQT">
+                        <size key="itemSize" width="115" height="115"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fC0-1X-sDY" firstAttribute="top" secondItem="ur9-qZ-Ins" secondAttribute="top" id="6Uf-bX-qYp"/>
+                <constraint firstItem="QIM-1t-RKp" firstAttribute="leading" secondItem="2Of-LY-Jv2" secondAttribute="leading" id="FfX-ll-LFf"/>
+                <constraint firstItem="2Of-LY-Jv2" firstAttribute="bottom" secondItem="QIM-1t-RKp" secondAttribute="bottom" id="NyF-Jc-tRH"/>
+                <constraint firstItem="2Of-LY-Jv2" firstAttribute="trailing" secondItem="QIM-1t-RKp" secondAttribute="trailing" id="OO0-Ik-iWH"/>
+                <constraint firstItem="fC0-1X-sDY" firstAttribute="trailing" secondItem="2Of-LY-Jv2" secondAttribute="trailing" id="PWp-Zn-sPg"/>
+                <constraint firstItem="QIM-1t-RKp" firstAttribute="top" secondItem="fC0-1X-sDY" secondAttribute="bottom" id="et8-QL-ehE"/>
+                <constraint firstItem="fC0-1X-sDY" firstAttribute="leading" secondItem="2Of-LY-Jv2" secondAttribute="leading" id="lMS-5o-1hj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2Of-LY-Jv2"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconArrowBack" width="50" height="50"/>
+        <image name="perro" width="500" height="376"/>
+    </resources>
+</document>

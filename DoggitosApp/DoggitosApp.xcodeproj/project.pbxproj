@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5259EAD220450E1500923574 /* BreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAD020450E1500923574 /* BreedCollectionViewCell.swift */; };
+		5259EAD320450E1500923574 /* BreedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5259EAD120450E1500923574 /* BreedCollectionViewCell.xib */; };
+		5259EAD820458F5C00923574 /* ManyPuppiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAD620458F5C00923574 /* ManyPuppiesVC.swift */; };
+		5259EAD920458F5C00923574 /* ManyPuppiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5259EAD720458F5C00923574 /* ManyPuppiesVC.xib */; };
+		5259EADC2045A13500923574 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EADA2045A13500923574 /* PictureCollectionViewCell.swift */; };
+		5259EADD2045A13500923574 /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5259EADB2045A13500923574 /* PictureCollectionViewCell.xib */; };
+		5259EAE12045D5BE00923574 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAE02045D5BE00923574 /* Breed.swift */; };
+		5259EAE32045DD4000923574 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAE22045DD4000923574 /* BreedViewModel.swift */; };
+		5259EAE820463E5B00923574 /* ImagesBreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAE720463E5B00923574 /* ImagesBreedViewModel.swift */; };
+		5259EAEA20463EB400923574 /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAE920463EB400923574 /* Dogs.swift */; };
+		5259EAED20464C7600923574 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259EAEC20464C7600923574 /* Extensions.swift */; };
+		52836DA22045026D003B1B7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836DA12045026D003B1B7C /* AppDelegate.swift */; };
+		52836DA92045026D003B1B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52836DA82045026D003B1B7C /* Assets.xcassets */; };
+		52836DAC2045026D003B1B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52836DAA2045026D003B1B7C /* LaunchScreen.storyboard */; };
+		52836DB72045026D003B1B7C /* DoggitosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836DB62045026D003B1B7C /* DoggitosAppTests.swift */; };
+		52836DC32045028C003B1B7C /* BreedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836DC12045028C003B1B7C /* BreedVC.swift */; };
+		52836DC42045028C003B1B7C /* BreedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52836DC22045028C003B1B7C /* BreedVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52836DB32045026D003B1B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52836D962045026D003B1B7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52836D9D2045026D003B1B7C;
+			remoteInfo = DoggitosApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5259EAD020450E1500923574 /* BreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCollectionViewCell.swift; sourceTree = "<group>"; };
+		5259EAD120450E1500923574 /* BreedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedCollectionViewCell.xib; sourceTree = "<group>"; };
+		5259EAD620458F5C00923574 /* ManyPuppiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyPuppiesVC.swift; sourceTree = "<group>"; };
+		5259EAD720458F5C00923574 /* ManyPuppiesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManyPuppiesVC.xib; sourceTree = "<group>"; };
+		5259EADA2045A13500923574 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		5259EADB2045A13500923574 /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
+		5259EAE02045D5BE00923574 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		5259EAE22045DD4000923574 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		5259EAE720463E5B00923574 /* ImagesBreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesBreedViewModel.swift; sourceTree = "<group>"; };
+		5259EAE920463EB400923574 /* Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		5259EAEC20464C7600923574 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		52836D9E2045026D003B1B7C /* DoggitosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggitosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52836DA12045026D003B1B7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52836DA82045026D003B1B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52836DAB2045026D003B1B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52836DAD2045026D003B1B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52836DB22045026D003B1B7C /* DoggitosAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggitosAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52836DB62045026D003B1B7C /* DoggitosAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggitosAppTests.swift; sourceTree = "<group>"; };
+		52836DB82045026D003B1B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52836DC12045028C003B1B7C /* BreedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedVC.swift; sourceTree = "<group>"; };
+		52836DC22045028C003B1B7C /* BreedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52836D9B2045026D003B1B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52836DAF2045026D003B1B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5259EACF20450AAF00923574 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5259EAD020450E1500923574 /* BreedCollectionViewCell.swift */,
+				5259EAD120450E1500923574 /* BreedCollectionViewCell.xib */,
+				5259EADA2045A13500923574 /* PictureCollectionViewCell.swift */,
+				5259EADB2045A13500923574 /* PictureCollectionViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		5259EAD420458F2E00923574 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52836DC12045028C003B1B7C /* BreedVC.swift */,
+				5259EAD620458F5C00923574 /* ManyPuppiesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5259EAD520458F3600923574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5259EACF20450AAF00923574 /* CustomCell */,
+				5259EAD720458F5C00923574 /* ManyPuppiesVC.xib */,
+				52836DC22045028C003B1B7C /* BreedVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5259EADE2045D54A00923574 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5259EAE22045DD4000923574 /* BreedViewModel.swift */,
+				5259EAE720463E5B00923574 /* ImagesBreedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5259EADF2045D55500923574 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5259EAE02045D5BE00923574 /* Breed.swift */,
+				5259EAE920463EB400923574 /* Dogs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5259EAEB20464C5D00923574 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5259EAEC20464C7600923574 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52836D952045026D003B1B7C = {
+			isa = PBXGroup;
+			children = (
+				52836DA02045026D003B1B7C /* DoggitosApp */,
+				52836DB52045026D003B1B7C /* DoggitosAppTests */,
+				52836D9F2045026D003B1B7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52836D9F2045026D003B1B7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52836D9E2045026D003B1B7C /* DoggitosApp.app */,
+				52836DB22045026D003B1B7C /* DoggitosAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52836DA02045026D003B1B7C /* DoggitosApp */ = {
+			isa = PBXGroup;
+			children = (
+				5259EAEB20464C5D00923574 /* Helpers */,
+				5259EADF2045D55500923574 /* Model */,
+				5259EADE2045D54A00923574 /* ViewModels */,
+				5259EAD520458F3600923574 /* View */,
+				5259EAD420458F2E00923574 /* Controller */,
+				52836DA12045026D003B1B7C /* AppDelegate.swift */,
+				52836DA82045026D003B1B7C /* Assets.xcassets */,
+				52836DAA2045026D003B1B7C /* LaunchScreen.storyboard */,
+				52836DAD2045026D003B1B7C /* Info.plist */,
+			);
+			path = DoggitosApp;
+			sourceTree = "<group>";
+		};
+		52836DB52045026D003B1B7C /* DoggitosAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				52836DB62045026D003B1B7C /* DoggitosAppTests.swift */,
+				52836DB82045026D003B1B7C /* Info.plist */,
+			);
+			path = DoggitosAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52836D9D2045026D003B1B7C /* DoggitosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52836DBB2045026D003B1B7C /* Build configuration list for PBXNativeTarget "DoggitosApp" */;
+			buildPhases = (
+				52836D9A2045026D003B1B7C /* Sources */,
+				52836D9B2045026D003B1B7C /* Frameworks */,
+				52836D9C2045026D003B1B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoggitosApp;
+			productName = DoggitosApp;
+			productReference = 52836D9E2045026D003B1B7C /* DoggitosApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52836DB12045026D003B1B7C /* DoggitosAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52836DBE2045026D003B1B7C /* Build configuration list for PBXNativeTarget "DoggitosAppTests" */;
+			buildPhases = (
+				52836DAE2045026D003B1B7C /* Sources */,
+				52836DAF2045026D003B1B7C /* Frameworks */,
+				52836DB02045026D003B1B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52836DB42045026D003B1B7C /* PBXTargetDependency */,
+			);
+			name = DoggitosAppTests;
+			productName = DoggitosAppTests;
+			productReference = 52836DB22045026D003B1B7C /* DoggitosAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52836D962045026D003B1B7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nelson Ramirez";
+				TargetAttributes = {
+					52836D9D2045026D003B1B7C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					52836DB12045026D003B1B7C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52836D9D2045026D003B1B7C;
+					};
+				};
+			};
+			buildConfigurationList = 52836D992045026D003B1B7C /* Build configuration list for PBXProject "DoggitosApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52836D952045026D003B1B7C;
+			productRefGroup = 52836D9F2045026D003B1B7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52836D9D2045026D003B1B7C /* DoggitosApp */,
+				52836DB12045026D003B1B7C /* DoggitosAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52836D9C2045026D003B1B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52836DAC2045026D003B1B7C /* LaunchScreen.storyboard in Resources */,
+				5259EAD320450E1500923574 /* BreedCollectionViewCell.xib in Resources */,
+				52836DA92045026D003B1B7C /* Assets.xcassets in Resources */,
+				5259EAD920458F5C00923574 /* ManyPuppiesVC.xib in Resources */,
+				52836DC42045028C003B1B7C /* BreedVC.xib in Resources */,
+				5259EADD2045A13500923574 /* PictureCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52836DB02045026D003B1B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52836D9A2045026D003B1B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5259EAE12045D5BE00923574 /* Breed.swift in Sources */,
+				5259EAE820463E5B00923574 /* ImagesBreedViewModel.swift in Sources */,
+				52836DA22045026D003B1B7C /* AppDelegate.swift in Sources */,
+				5259EAE32045DD4000923574 /* BreedViewModel.swift in Sources */,
+				5259EAEA20463EB400923574 /* Dogs.swift in Sources */,
+				5259EAED20464C7600923574 /* Extensions.swift in Sources */,
+				5259EAD220450E1500923574 /* BreedCollectionViewCell.swift in Sources */,
+				5259EADC2045A13500923574 /* PictureCollectionViewCell.swift in Sources */,
+				5259EAD820458F5C00923574 /* ManyPuppiesVC.swift in Sources */,
+				52836DC32045028C003B1B7C /* BreedVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52836DAE2045026D003B1B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52836DB72045026D003B1B7C /* DoggitosAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52836DB42045026D003B1B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52836D9D2045026D003B1B7C /* DoggitosApp */;
+			targetProxy = 52836DB32045026D003B1B7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52836DAA2045026D003B1B7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52836DAB2045026D003B1B7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52836DB92045026D003B1B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52836DBA2045026D003B1B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52836DBC2045026D003B1B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoggitosApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelson.DoggitosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52836DBD2045026D003B1B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoggitosApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelson.DoggitosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52836DBF2045026D003B1B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoggitosAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelson.DoggitosAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoggitosApp.app/DoggitosApp";
+			};
+			name = Debug;
+		};
+		52836DC02045026D003B1B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoggitosAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelson.DoggitosAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoggitosApp.app/DoggitosApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52836D992045026D003B1B7C /* Build configuration list for PBXProject "DoggitosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52836DB92045026D003B1B7C /* Debug */,
+				52836DBA2045026D003B1B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52836DBB2045026D003B1B7C /* Build configuration list for PBXNativeTarget "DoggitosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52836DBC2045026D003B1B7C /* Debug */,
+				52836DBD2045026D003B1B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52836DBE2045026D003B1B7C /* Build configuration list for PBXNativeTarget "DoggitosAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52836DBF2045026D003B1B7C /* Debug */,
+				52836DC02045026D003B1B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52836D962045026D003B1B7C /* Project object */;
+}
